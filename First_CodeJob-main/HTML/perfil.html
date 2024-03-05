@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{First_CodeJob}</title>
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/perfil.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- MENÚ HAMBURGUESA -->
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+        <nav>
+            <a class="burger_menu_item_1" style="animation-delay: 0.1s" href="./ofertas.html">Ofertas</a>
+            <a class="burger_menu_item_2" style="animation-delay: 0.3s" href="./rutas.html">Rutas</a>
+            <a class="burger_menu_item_3" style="animation-delay: 0.4s" href="./acerca.html">Acerca de</a>
+            <a class="burger_menu_item_5" style="animation-delay: 0.6s" href="./login.html">Iniciar Sesión</a>
+        </nav>
+    </div>
+    <!-- CONTENT -->
+    <div id="container">
+        <!------------------------------- MENÚ ------------------------------>
+        <nav class="container_menu">
+            <header class="header_container">
+                <span class="brackets bracket_1">{</span>
+                <a href="../index.html">
+                    <h1 class="title" title="{First_CodeJob}">First_CodeJob</h1>
+                </a>
+                <span class="brackets bracket_2">}</span>
+            </header>
+            <ul class="container_list">
+                <li class="item item_1"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="item item_1"><a href="./campus.html">Campus</a></li>
+                <li class="item item_1"><a href="./PreguntasPrueba.html">Preguntas</a></li>
+                <li class="item item_1"><a href="./campus_video.html">Video</a></li>
+                <li class="item item_1"><a href="../videos/sesionvideos.html">Entrevista</a></li>
+                <li class="item item_2"><a href="./rutas.html">Rutas</a></li>
+                <li class="item item_3"><a href="./acerca.html">Acerca de</a></li>
+                <li class="item item_5"><a href="./login.html">Iniciar Sesión</a></li>
+            </ul>
+            <div class="language_container">
+                <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                <div class="language_container">
+                    <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                    <a class="language_english_text" onclick="setLanguageCookie('en')"></a>
+                    <a class="language_spanish_text" onclick="setLanguageCookie('es')"></a>
+                    <a class="language_french_text" onclick="setLanguageCookie('fr')"></a>
+                    <a class="language_german_text" onclick="setLanguageCookie('de')"></a>
+                    <a class="language_chinese_text" onclick="setLanguageCookie('zh-CN')"></a>
+                    <a class="language_arabic_text" onclick="setLanguageCookie('ar')"></a>
+                    <a class="language_hindi_text" onclick="setLanguageCookie('hi')"></a>
+                    <a class="language_portuguese_text" onclick="setLanguageCookie('pt')"></a>
+                    <a class="language_russian_text" onclick="setLanguageCookie('ru')"></a>
+                    <a class="language_japanese_text" onclick="setLanguageCookie('ja')"></a>
+
+                    <!-- Contenedor para el widget de Google Translate -->
+                    <div id="google_translate_element"></div>
+                </div>
+        </nav>
+        <!------------------------------ MAIN ------------------------------>
+        <main class="container_main">
+            <!------------------------------ header main ------------------------------>
+            <header class="header_main">
+                <ul class="nav_main">
+                    <li><a href="./perfil.html">Perfil</a></li>
+                    <li><a href="./campus.html">Campus</a></li>
+                    <li><a href="./PreguntasPrueba.html">Certificaciones</a></li>
+                    <li><a href="../videos/sesionvideos.html">Videos del Coder</a></li>
+
+                </ul>
+            </header>
+            <!------------------------------ Perfil ------------------------------>
+            <section class="perfil">
+                <div class="container_perfil">
+                    <div class="title_container">
+                        <h2 class="perfil_nombre">Victor Gonzalez</h2>
+                        <ion-icon class="edit" name="create-outline" title="editar"></ion-icon>
+                    </div>
+                    <ul class="perfil_social-icon">
+                        <li class="perfil_social-icon__item">
+                            <a class="perfil_social-icon__link" href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="perfil_social-icon__item">
+                            <a class="perfil_social-icon__link" href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="perfil_social-icon__item">
+                            <a class="perfil_social-icon__link" href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="perfil_social-icon__item">
+                            <a class="perfil_social-icon__link" href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="perfil_social-icon__item">
+                            <a class="perfil_social-icon__link" href="#">
+                                <ion-icon name="logo-github"></ion-icon></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="perfil_contacto">
+                        <p class="contacto"><ion-icon class="logo_contacto" name="mail-outline"></ion-icon>
+                            victor@pruebras.com</p>
+                        <p class="contacto"><ion-icon class="logo_contacto" name="call-outline"></ion-icon> +57
+                            3126666666</p>
+                    </div>
+                    <div>
+                        <p>Medellin - Colombia</p>
+                    </div>
+                </div>
+                <div class="container_foto_perfil">
+                    <img class="foto_peril" src="../img/woman-6194370_640.jpg" alt="foto de peril">
+                </div>
+            </section>
+            <!------------------------------ Sobre mi ------------------------------>
+            <section class="sobremi_container">
+                <div class="title_container">
+                    <h2 class="subtitulos">Sobre Mi</h2>
+                    <ion-icon class="edit" name="create-outline" title="editar"></ion-icon>
+                </div>
+                <p class="sobremi_text">Desarrollador Full-Stack con mediana experiencia en tecnologías frontend y
+                    backend. Me encanta trabajar en proyectos pequeños y medianos que tengan un gran potencial.</p>
+                <p class="sobremi_text">Como auto-didacta, estoy siempre aprendiendo y mejorando mis habilidades para
+                    ofrecer soluciones innovadoras y creativas. </p>
+                <p class="sobremi_text">Actualmente trabajo como desarrollador freelance, aunque mi disponibilidad es
+                    limitada. Estoy siempre buscando nuevas oportunidades para aprender y crecer, y me encantaría poder
+                    aportar mis habilidades y experiencia a proyectos desafiantes y emocionantes.</p>
+            </section>
+
+            <!------------------------------ Experiencias ------------------------------>
+            <section class="container_experiencias">
+                <div class="title_container">
+                    <h2 class="subtitulos">Experiencia</h2>
+                    <ion-icon class="edit" name="create-outline" title="editar"></ion-icon>
+                </div>
+                <ul class="experiencias_list">
+                    <li class="experiencias_list_items">
+                        <div>
+                            <h3 class="experiencias_empresas">Autónomo - Desarrollador Full-Stack </h3>
+                            <span class="experiencias_año">Mayo 2022 - Actualidad</span>
+                        </div>
+                        <ul class="experencias_actividades">
+                            <li class="experencias_actividades_items">Creación y mantenimiento de gestores de datos
+                                (dashboard)</li>
+                            <li class="experencias_actividades_items">Seguimiento en Jira Software </li>
+                            <li class="experencias_actividades_items">Gestión de software en la nube (AWS)</li>
+                        </ul>
+                    </li>
+                    <li class="experiencias_list_items">
+                        <div>
+                            <h3 class="experiencias_empresas">Fundación Atención Primaria </h3>
+                            <span class="experiencias_año">Noviembre 2021 - Mayo 2022</span>
+                        </div>
+                        <ul class="experencia_actividades">
+                            <li class="experencias_actividades_items">Desarollador full-stack</li>
+                            <li class="experencias_actividades_items">Mantenimiento de páginas web HTML/CSS/JS</li>
+                            <li class="experencias_actividades_items">Mantenimiento ERP (C#)</li>
+                            <li class="experencias_actividades_items">Creación de servicios backend para app</li>
+                            <li class="experencias_actividades_items">Creación gestores de datos y dashboards en React
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="experiencias_list_items">
+                        <div>
+                            <h3 class="experiencias_empresas">Obremo SL</h3>
+                            <span class="experiencias_año">Octubre 2018 - Marzo 2021</span>
+                        </div>
+                        <ul class="experencia_actividades">
+                            <li class="experencias_actividades_items">Tendido de cableado de fibra óptica y redes.</li>
+                            <li class="experencias_actividades_items">Configuración de equipos para la conexión a
+                                internet. </li>
+                            <li class="experencias_actividades_items">Mantenimiento de redes.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!------------------------------ Proyectos ------------------------------>
+            <section class="container_proyectos">
+                <div class="title_container">
+                    <h2 class="subtitulos">Proyectos</h2>
+                    <ion-icon class="edit" name="create-outline" title="editar"></ion-icon>
+                </div>
+                <ul class="proyectos_list">
+                    <li class="proyecto_items">
+                        <a href="">
+                            <div class="container_proyecyo_img">
+                                <img class="proyecto_img" src="../img/pexels.jpg" alt="">
+                            </div>
+                            <h3 class="proyecto_empresa">Pexels</h3>
+                            <h4 class="proyecto_año">2023</h4>
+                            <p class="proyecto_actividad">Portal web de actividades y gestor de datos para la empresa
+                            </p>
+                            <ul class="proyecto_herramienta">
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="proyecto_items">
+                        <a href="">
+                            <div class="container_proyecyo_img">
+                                <img class="proyecto_img" src="../img/titulo-partes-de-una-pagina-web.jpg" alt="">
+                            </div>
+                            <h3 class="proyecto_empresa">GoDady</h3>
+                            <h4 class="proyecto_año">2023</h4>
+                            <p class="proyecto_actividad">Portal web de actividades y gestor de datos para la empresa
+                            </p>
+                            <ul class="proyecto_herramienta">
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="proyecto_items">
+                        <a href="">
+                            <div class="container_proyecyo_img">
+                                <img class="proyecto_img" src="../img/titulo-partes-de-una-pagina-web.jpg" alt="">
+                            </div>
+                            <h3 class="proyecto_empresa">GoDady</h3>
+                            <h4 class="proyecto_año">2023</h4>
+                            <p class="proyecto_actividad">Portal web de actividades y gestor de datos para la empresa
+                            </p>
+                            <ul class="proyecto_herramienta">
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span>Figma</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="proyecto_items">
+                        <a href="">
+                            <div class="container_proyecyo_img">
+                                <img class="proyecto_img" src="../img/titulo-partes-de-una-pagina-web.jpg" alt="">
+                            </div>
+                            <h3 class="proyecto_empresa">GoDady</h3>
+                            <h4 class="proyecto_año">2023</h4>
+                            <p class="proyecto_actividad">Portal web de actividades y gestor de datos para la empresa
+                            </p>
+                            <ul class="proyecto_herramienta">
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                                <li class="proyecto_herramienta_items">
+                                    <div class="container_herramienta_img"><img class="herramienta_img"
+                                            src="../img/figmalogo.png" alt=""></div>
+                                    <span class="nombre_herramienta">Figma</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!------------------------------ Habilidades ------------------------------>
+            <section class="habilidades_container">
+                <div class="title_container">
+                    <h2 class="subtitulos">Habilidades</h2>
+                    <ion-icon class="edit" name="create-outline" title="editar"></ion-icon>
+                </div>
+                <ul class="habilidades_list">
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+                    <li class="proyecto_herramienta_items">
+                        <div class="container_herramienta_img"><img class="herramienta_img" src="../img/figmalogo.png"
+                                alt=""></div>
+                        <span class="nombre_herramienta">Figma</span>
+                    </li>
+
+                </ul>
+            </section>
+        </main>
+        <!-----------------------------  FOOTER ---------------------------->
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <p>&copy;2023 Firs_CodeJob | Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="../js/traductor.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../js/perfil.js"></script>
+
+
+</body>
+
+</html>

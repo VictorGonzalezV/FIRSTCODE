@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{First_CodeJob}</title>
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/rutas.css">
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- MENÚ HAMBURGUESA -->
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+        <nav>
+            <a class="burger_menu_item_1" style="animation-delay: 0.1s" href="./ofertas.html">Ofertas</a>
+            <a class="burger_menu_item_2" style="animation-delay: 0.3s" href="./rutas.html">Rutas</a>
+            <a class="burger_menu_item_3" style="animation-delay: 0.4s" href="./acerca.html">Acerca de</a>
+            <a class="burger_menu_item_5" style="animation-delay: 0.6s" href="./login.html">Iniciar Sesión</a>
+        </nav>
+    </div>
+    <!-- CONTENT -->
+    <div id="container">
+        <!------------------------------- MENÚ ------------------------------>
+        <nav class="container_menu">
+            <header class="header_container">
+                <span class="brackets bracket_1">{</span>
+                <a href="../index.html" class="title" title="{First_CodeJob}">First_CodeJob</a>
+                <span class="brackets bracket_2">}</span>
+            </header>
+            <ul class="container_list">
+                <li class="item item_1"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="item item_1"><a href="./campus.html">Campus</a></li>
+                <li class="item item_1"><a href="./PreguntasPrueba.html">Preguntas</a></li>
+                <li class="item item_1"><a href="./campus_video.html">Video</a></li>
+                <li class="item item_1"><a href="../videos/sesionvideos.html">Entrevista</a></li>
+                <li class="item item_2"><a href="./rutas.html">Rutas</a></li>
+                <li class="item item_3"><a href="./acerca.html">Acerca de</a></li>
+                <li class="item item_5"><a href="./login.html">Iniciar Sesión</a></li>
+            </ul>
+            <div class="language_container">
+                <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                <div class="language_container">
+                    <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                    <a class="language_english_text" onclick="setLanguageCookie('en')"></a>
+                    <a class="language_spanish_text" onclick="setLanguageCookie('es')"></a>
+                    <a class="language_french_text" onclick="setLanguageCookie('fr')"></a>
+                    <a class="language_german_text" onclick="setLanguageCookie('de')"></a>
+                    <a class="language_chinese_text" onclick="setLanguageCookie('zh-CN')"></a>
+                    <a class="language_arabic_text" onclick="setLanguageCookie('ar')"></a>
+                    <a class="language_hindi_text" onclick="setLanguageCookie('hi')"></a>
+                    <a class="language_portuguese_text" onclick="setLanguageCookie('pt')"></a>
+                    <a class="language_russian_text" onclick="setLanguageCookie('ru')"></a>
+                    <a class="language_japanese_text" onclick="setLanguageCookie('ja')"></a>
+
+                    <!-- Contenedor para el widget de Google Translate -->
+                    <div id="google_translate_element"></div>
+                </div>
+        </nav>
+        <!------------------------------ MAIN ------------------------------>
+        <main class="container_main_rutas">
+            <header>
+                <h1 class="title-rutas">Rutas de Aprendizaje</h1>
+            </header>
+            <div class="container-rutas">
+                <section class="conteiner_front">
+                    <div class="frontend">
+                        <h2>Desarrollo Frontend</h2>
+                        <p>El desarrollo frontend se enfoca en la interfaz de usuario y la experiencia del usuario.</p>
+                        <br>
+                        <h3>HTML, CSS, JavaScript:</h3>
+                        <p>Dominar HTML para estructurar contenido, CSS para el diseño y JavaScript para la
+                            interactividad en páginas web.
+                            Conocer frameworks de estilización como Bootstrap para agilizar el diseño.</p>
+                        <h3>Frameworks y Librerías:</h3>
+                        <p>Explorar y especializarse en un framework moderno como React, Angular o Vue.js para la
+                            construcción de aplicaciones web interactivas.
+                            Comprender el manejo de estado con librerías como Redux (para React) o Vuex (para Vue.js).
+                        </p>
+                        <h3>Responsive Design y Performance:</h3>
+                        <p>Aprender a diseñar páginas web responsivas que se adapten a diferentes dispositivos y tamaños
+                            de pantalla.
+                            Conocer técnicas para optimizar el rendimiento de las aplicaciones web.</p>
+                        <h3>Herramientas y Desarrollo Avanzado:</h3>
+                        <p>Familiarizarse con herramientas de desarrollo como npm, Webpack y Babel para automatizar
+                            tareas de desarrollo.
+                            Profundizar en conceptos avanzados como server-side rendering, Progressive Web Apps (PWA) y
+                            Single Page Applications (SPA).</p>
+                    </div>
+                    <div class="img_front">
+                        <img class="imagenes_ruta imagenes_ruta1" src="../img/image-front.jpg" alt="imege-frontend">
+                    </div>
+                </section>
+                <div></div>
+                <section class="container_back">
+                    <div class="img_back">
+                        <img class="imagenes_ruta imegenes_rutas2" src="../img/image-back.jpg" alt="image-backend">
+                    </div>
+                    <div class="backend">
+                        <h2>Desarrollo Backend</h2>
+                        <p>El desarrollo backend se encarga de la lógica y el funcionamiento detrás de escena de una
+                            aplicación.</p><br>
+                        <h3>Fundamentos de Programación:</h3>
+                        <p>Aprender los fundamentos de la lógica de programación utilizando un lenguaje como Python o
+                            JavaScript. Comprender estructuras de control, funciones y manejo de datos.</p>
+                        <h3>Bases de Datos y SQL:</h3>
+                        <p>Estudiar bases de datos relacionales (como MySQL o PostgreSQL) y comprender cómo interactúan
+                            con las aplicaciones.</p>
+                        <h3>Servidores y APIs:</h3>
+                        <p>
+                            Familiarizarse con el funcionamiento de servidores web y protocolos como HTTP.
+                            Aprender a construir y consumir APIs RESTful utilizando frameworks como Flask (Python),
+                            Express (Node.js) o Spring (Java).
+                        </p>
+                        <h3>Frameworks y Herramientas:</h3>
+                        <p>Profundizar en un framework específico según el lenguaje elegido, como Django (Python),
+                            Node.js (para JavaScript) o Spring Boot (Java).
+                            Conocer herramientas de control de versiones como Git, y comprender su uso en el desarrollo
+                            de software.</p>
+                        <h3>Seguridad y Pruebas:</h3>
+                        <p>Entender los principios básicos de seguridad en aplicaciones web, como la prevención de
+                            ataques comunes.
+                            Aprender a realizar pruebas unitarias para garantizar la calidad del código.</p>
+                        <h3>Accesibilidad y Pruebas:</h3>
+                        <p>Aprender sobre prácticas de accesibilidad web para hacer las aplicaciones más inclusivas.
+                            Realizar pruebas de usuario y pruebas de rendimiento para garantizar la usabilidad y
+                            eficiencia de las aplicaciones.</p>
+                    </div>
+
+                </section>
+
+                <section class="container_base">
+                    <div class="base_datos">
+                        <h2>Bases de Datos</h2>
+                        <p>Las bases de datos son fundamentales para almacenar y gestionar datos en aplicaciones.</p>
+                        <br>
+                        <h3>Modelado de Datos y SQL:</h3>
+                        <p>Estudiar el diseño y modelado de bases de datos, aprendiendo a representar datos de manera
+                            efectiva.
+                            Adquirir un sólido entendimiento en SQL para crear, consultar y manipular datos en bases de
+                            datos relacionales como MySQL, PostgreSQL, o en sistemas NoSQL como MongoDB.
+                        </p>
+                        <h3>Optimización y Mantenimiento:</h3>
+                        <p>Conocer estrategias de optimización de consultas y rendimiento para garantizar bases de datos
+                            eficientes.
+                            Aprender sobre tareas de mantenimiento como la copia de seguridad, restauración y
+                            administración de bases de datos.</p>
+                        <h3>Seguridad y Transacciones:</h3>
+                        <p>Comprender la importancia de la seguridad en bases de datos, incluyendo control de acceso y
+                            encriptación.
+                            Entender el concepto de transacciones en bases de datos para mantener la integridad de los
+                            datos.</p>
+                        <h3>Big Data y Sistemas Distribuidos:</h3>
+                        <p>Explorar conceptos relacionados con el manejo de grandes volúmenes de datos, sistemas
+                            distribuidos y bases de datos distribuidas.</p>
+                    </div>
+                    <div class="img_base">
+                        <img class="imegenes_rutas imegenes_rutas3 " src="../img/image-database.jpg"
+                            alt="database_image">
+                    </div>
+
+                </section>
+
+
+            </div>
+    </div>
+
+
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+
+        <p>&copy;2023 First_CodeJob | Todos los derechos reservados</p>
+    </footer>
+    </div>
+
+
+
+    <script src="../js/traductor.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

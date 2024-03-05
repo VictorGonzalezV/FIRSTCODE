@@ -1,0 +1,150 @@
+#btnComenzarGrabacion{
+    transition-duration: 0.5s;
+}
+
+.btn-active{
+    opacity: 0.5;
+}
+
+.permisos{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    color: var(--color);
+    padding: 20px;  
+}
+
+.microfono{
+    display: flex;
+}
+
+.microfono label{
+    margin: 10px;
+    font-weight: 600;
+}
+
+#dispositivosDeAudio{
+    cursor: pointer;
+}
+
+.camara{
+    display: flex;
+}
+
+.camara label{
+    margin: 10px;
+    font-weight: 600;
+}
+
+.videoRedondo{
+    justify-content: center;
+    display: 	flex;
+}
+
+#dispositivosDeVideo{
+    cursor: pointer;
+}
+
+
+#video{
+    justify-content: center;
+    border-radius: 500px;
+}
+
+#duracion{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color);
+}
+
+.btn-neon{
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    color: var(--color);
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-neon:hover{
+    background: var(--color-background-inverso);
+    color: var(--background-cards);
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color), 0 0 60px var(--color);
+    border-radius: 1rem;
+    transition: 300ms;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+#contenedor{
+    margin-top: 60px;
+
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--color-text);
+}
+
+.sesionPreguntas{
+    display: flex;
+    justify-content: space-around;
+    bottom: 30px;
+}
+
+#pregunta{
+    color: var(--color);
+
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#dispositivosDeAudio{
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 30px;
+    color: var(--color);
+    font-size: 24px;
+}
+
+#dispositivosDeVideo{
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 30px;
+    color: var(--color);
+    font-size: 24px;
+}
+
+label{
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 30px;
+    color: var(--color);
+    font-size: 24px;
+}
+
+
+  /* Estilos para los controles del video */
+
+video::-webkit-media-controls-play-button {
+    border-radius: 30px;
+    background-color:var(--color-background-inverso); /* Color del botón de reproducción */
+    margin-left: 10px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}

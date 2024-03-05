@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{First_CodeJob}</title>
+  <link rel="stylesheet" href="../CSS/sesionVideos.css">
+
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/preguntastyle.css">
+  <script type="text/javascript">
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- MENÚ HAMBURGUESA -->
+  <button class="burger" onclick="toggleMenu()"></button>
+  <div class="background"></div>
+  <div class="menu">
+    <nav>
+      <a class="burger_menu_item_1" style="animation-delay: 0.1s" href="./ofertas.html">Ofertas</a>
+
+      <a class="burger_menu_item_2" style="animation-delay: 0.3s" href="./rutas.html">Rutas</a>
+      <a class="burger_menu_item_3" style="animation-delay: 0.4s" href="./acerca.html">Acerca de</a>
+      <a class="burger_menu_item_5" style="animation-delay: 0.6s" href="./login.html">Iniciar Sesión</a>
+    </nav>
+  </div>
+  <!-- CONTENT -->
+  <div id="container">
+    <!------------------------------- MENÚ ------------------------------>
+    <nav class="container_menu">
+      <header class="header_container">
+        <span class="brackets bracket_1">{</span>
+        <a href="../index.html" class="title" title="{First_CodeJob}">First_CodeJob</a>
+        <span class="brackets bracket_2">}</span>
+      </header>
+      <ul class="container_list">
+        <li class="item item_1"><a href="./ofertas.html">Ofertas</a></li>
+        <li class="item item_1"><a href="./campus.html">Campus</a></li>
+        <li class="item item_1"><a href="./PreguntasPrueba.html">Preguntas</a></li>
+        <li class="item item_1"><a href="./campus_video.html">Video</a></li>
+        <li class="item item_1"><a href="../videos/sesionvideos.html">Entrevista</a></li>
+        <li class="item item_2"><a href="./rutas.html">Rutas</a></li>
+        <li class="item item_3"><a href="./acerca.html">Acerca de</a></li>
+        <li class="item item_5"><a href="./login.html">Iniciar Sesión</a></li>
+    </ul>
+      <div class="language_container">
+        <ion-icon name="language-outline" class="language_icon"></ion-icon>
+        <div class="language_container">
+          <ion-icon name="language-outline" class="language_icon"></ion-icon>
+          <a class="language_english_text" onclick="setLanguageCookie('en')"></a>
+          <a class="language_spanish_text" onclick="setLanguageCookie('es')"></a>
+          <a class="language_french_text" onclick="setLanguageCookie('fr')"></a>
+          <a class="language_german_text" onclick="setLanguageCookie('de')"></a>
+          <a class="language_chinese_text" onclick="setLanguageCookie('zh-CN')"></a>
+          <a class="language_arabic_text" onclick="setLanguageCookie('ar')"></a>
+          <a class="language_hindi_text" onclick="setLanguageCookie('hi')"></a>
+          <a class="language_portuguese_text" onclick="setLanguageCookie('pt')"></a>
+          <a class="language_russian_text" onclick="setLanguageCookie('ru')"></a>
+          <a class="language_japanese_text" onclick="setLanguageCookie('ja')"></a>
+
+          <!-- Contenedor para el widget de Google Translate -->
+          <div id="google_translate_element"></div>
+        </div>
+    </nav>
+    <!------------------------------ MAIN ------------------------------>
+    <main class="container_main_index .container_main">
+
+      <header class="header_main">
+        <ul class="nav_main">
+          <li><a href="./perfil.html">Perfil</a></li>
+          <li><a href="./campus.html">Campus</a></li>
+          <li><a href="./PreguntasPrueba.html">Certificaciones</a></li>
+          <li><a href="../videos/sesionvideos.html">Videos del Coder</a></li>
+        </ul> <!-- SLOGAN -->
+
+
+        <div class="container_slogan">
+          <h2 class="text_slogan">¡Prueba de Conocimiento de Javascript!</h2>
+          <br><br> <br><br>
+          <br><br>
+
+        </div>
+
+
+
+
+
+        <form id="quizForm">
+
+          <ol>
+            <li>
+              <p>1. ¿Cuál de los siguientes es un tipo de dato primitivo en JavaScript?</p>
+              <label><input type="radio" name="q1" value="a">a) Object</label>
+              <label><input type="radio" name="q1" value="b">b) String</label>
+              <label><input type="radio" name="q1" value="c">c) Array</label>
+              <br><br>
+            </li>
+            <li>
+              <p>2. ¿Cómo se declara una variable en JavaScript?</p>
+              <label><input type="radio" name="q2" value="a">a) let x = 10;</label>
+              <label><input type="radio" name="q2" value="b">b) variable x = 10;</label>
+              <label><input type="radio" name="q2" value="c">c) x = 10;</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>3. ¿Cuál es el resultado de 5 + '5' en JavaScript?</p>
+              <label><input type="radio" name="q3" value="a">a) 55</label>
+              <label><input type="radio" name="q3" value="b">b) 10</label>
+              <label><input type="radio" name="q3" value="c">c) "55"</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>4. ¿Cómo se hace un comentario de una sola línea en JavaScript?</p>
+              <label><input type="radio" name="q4" value="a">a) // Comentario</label>
+              <label><input type="radio" name="q4" value="b">b) /* Comentario */</label>
+              <label><input type="radio" name="q4" value="c">c) -- Comentario</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>5. ¿Cuál es el operador lógico AND en JavaScript?</p>
+              <label><input type="radio" name="q5" value="a">a) ||</label>
+              <label><input type="radio" name="q5" value="b">b) &&</label>
+              <label><input type="radio" name="q5" value="c">c) !</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>6. ¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?</p>
+              <label><input type="radio" name="q6" value="a">a) push()</label>
+              <label><input type="radio" name="q6" value="b">b) append()</label>
+              <label><input type="radio" name="q6" value="c">c) add()</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>7. ¿Cuál es el resultado de typeof null en JavaScript?</p>
+              <label><input type="radio" name="q7" value="a">a) "null"</label>
+              <label><input type="radio" name="q7" value="b">b) "object"</label>
+              <label><input type="radio" name="q7" value="c">c) "undefined"</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>8. ¿Cuál es el propósito de JSON.parse() en JavaScript?</p>
+              <label><input type="radio" name="q8" value="a">a) Convertir un objeto a una cadena JSON</label>
+              <label><input type="radio" name="q8" value="b">b) Convertir una cadena JSON a un objeto</label>
+              <label><input type="radio" name="q8" value="c">c) Parsear una función</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>9. ¿Cuál es el alcance de una variable declarada con var en JavaScript?</p>
+              <label><input type="radio" name="q9" value="a">a) Global</label>
+              <label><input type="radio" name="q9" value="b">b) Local</label>
+              <label><input type="radio" name="q9" value="c">c) Ambos</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>10. ¿Cómo se detiene la propagación de eventos en JavaScript?</p>
+              <label><input type="radio" name="q10" value="a">a) event.stop()</label>
+              <label><input type="radio" name="q10" value="b">b) event.stopPropagation()</label>
+              <label><input type="radio" name="q10" value="c">c) event.prevent()</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>11. ¿Cuál es el método utilizado para cambiar el contenido HTML de un elemento en JavaScript?</p>
+              <label><input type="radio" name="q11" value="a">a) changeContent()</label>
+              <label><input type="radio" name="q11" value="b">b) setInnerHTML()</label>
+              <label><input type="radio" name="q11" value="c">c) innerHTML()</label>
+              <br><br>
+
+            </li>
+            <li>
+              <p>12. ¿Cuál es el resultado de 2 + '2' en JavaScript?</p>
+              <label><input type="radio" name="q12" value="a">a) 22</label>
+              <label><input type="radio" name="q12" value="b">b) 4</label>
+              <label><input type="radio" name="q12" value="c">c) "22"</label>
+              <br><br>
+
+            </li>
+          </ol>
+          <button class="btn-neon" type="button" onclick="calcularResultado()">Verificar Respuestas</button>
+        </form>
+        <div id="result"></div>
+
+        <div class="logro"></div>
+
+
+        <div id="retroalimentacion"></div>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+        <!-- COMPANY_IMAGES -->
+        <div class="box_container_companies" id="box_container_companies">
+          <!-- <video src="video/entrevistaCoder.mp4" controls></video> -->
+        </div>
+
+
+  </div>
+
+
+
+
+  </main>
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#"><ion-icon name="logo-github"></ion-icon></a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </li>
+    </ul>
+    <p class="footer_text">&copy;2023 First_CodeJob | Todos los derechos reservados</p>
+  </footer>
+  </div>
+
+
+  <script src="../js/scriptFormulario.js"></script>
+
+  <script src="../js/traductor.js"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="../js/perfil.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{First_CodeJob}</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/variables.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- MENÚ HAMBURGUESA -->
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+        <nav>
+            <a href="./HTML/ofertas.html" class="burger_menu_item_1" style="animation-delay: 0.1s">Ofertas</a>
+            <a href="./HTML/rutas.html" class="burger_menu_item_2" style="animation-delay: 0.3s">Rutas</a>
+            <a href="./HTML/acerca.html" class="burger_menu_item_3" style="animation-delay: 0.4s">Acerca de</a>
+            <a href="./HTML/signup.html" class="burger_menu_item_4" style="animation-delay: 0.5s">Registrarse</a>
+            <a href="./HTML/signin.html" class="burger_menu_item_5" style="animation-delay: 0.6s">Iniciar Sesión</a>
+
+        </nav>
+    </div>
+    <!-- CONTENT -->
+    <div id="container">
+        <!------------------------------- MENÚ ------------------------------>
+        <nav class="container_menu">
+            <header class="header_container">
+                <span class="brackets bracket_1">{</span>
+                <a href="index.html" class="title" title="{First_CodeJob}">First_CodeJob</a>
+                <span class="brackets bracket_2">}</span>
+            </header>
+            <ul class="container_list">
+                <li class="item item_1"><a href="./HTML/ofertas.html">Ofertas</a></li>
+                <li class="item item_1"><a href="./HTML/campus.html">Campus</a></li>
+                <li class="item item_1"><a href="./HTML/PreguntasPrueba.html">Preguntas</a></li>
+                <li class="item item_1"><a href="./HTML/campus_video.html">Video</a></li>
+                <li class="item item_1"><a href="../First_CodeJob-main/videos/sesionvideos.html">Entrevista</a></li>
+                <li class="item item_2"><a href="./HTML/rutas.html">Rutas</a></li>
+                <li class="item item_3"><a href="./HTML/acerca.html">Acerca de</a></li>
+                <li class="item item_5"><a href="./HTML/login.html">Iniciar Sesión</a></li>
+            </ul>
+            <div class="language_container">
+                <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                <a class="language_english_text" onclick="setLanguageCookie('en')"></a>
+                <a class="language_spanish_text" onclick="setLanguageCookie('es')"></a>
+                <a class="language_french_text" onclick="setLanguageCookie('fr')"></a>
+                <a class="language_german_text" onclick="setLanguageCookie('de')"></a>
+                <a class="language_chinese_text" onclick="setLanguageCookie('zh-CN')"></a>
+                <a class="language_arabic_text" onclick="setLanguageCookie('ar')"></a>
+                <a class="language_hindi_text" onclick="setLanguageCookie('hi')"></a>
+                <a class="language_portuguese_text" onclick="setLanguageCookie('pt')"></a>
+                <a class="language_russian_text" onclick="setLanguageCookie('ru')"></a>
+                <a class="language_japanese_text" onclick="setLanguageCookie('ja')"></a>
+
+                <!-- Contenedor para el widget de Google Translate -->
+                <div id="google_translate_element"></div>
+
+            </div>
+        </nav>
+        <!------------------------------ MAIN ------------------------------>
+        <main class="container_main_index">
+            <!-- SLOGAN -->
+            <div class="container_slogan">
+                <h2 class="text_slogan">¡Consigue tu primer empleo como desarrollador!</h2>
+            </div>
+
+
+
+
+
+            <!-- SEARCHER -->
+            <div class="search_container">
+                <input class="input_search" type="text" placeholder="Frontend/Backend Developer"
+                    title="Escribir oferta">
+                <a href="./HTML/ofertas.html"><button class="button_search" type="submit"
+                        title="Buscar oferta">Buscar</button></a>
+            </div>
+            <!-- GENERAL TEXT -->
+            <div class="container_text">
+                <h3 class="text_images">Podrás ser parte de las empresas más top</h3>
+            </div>
+            <!-- COMPANY_IMAGES -->
+            <div class="box_container_companies" id="box_container_companies">
+
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+        </ul>
+        <p class="footer_text">&copy;2023 First_CodeJob | Todos los derechos reservados</p>
+    </footer>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/bd.js"></script>
+
+
+    <script src="./js/traductor.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+
+</html>

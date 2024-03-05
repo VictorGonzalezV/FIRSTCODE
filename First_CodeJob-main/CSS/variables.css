@@ -1,0 +1,15 @@
+:root {
+    /* --color-text: #333; */
+    --color: #333;
+    --color2: white;
+    --color-background: #f0f0f0;
+    --background-cards: white;
+    --color-login: rgb(9, 9, 110);
+
+    --color-inverso: #f0f0f0;
+    --color-background-inverso: #333;
+
+    --size-title: 2rem;
+    --size-subtitle: 1.5rem;
+    --size-paragrahp: 1rem;
+}

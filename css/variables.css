@@ -1,0 +1,12 @@
+:root {
+    --color-text: rgb(203, 203, 203);
+    --color-background-hover-grey: rgb(174, 170, 170);
+    --color-background-signup-dark-grey:rgb(36, 36, 36);
+    --color-background-signup-black: rgb(3, 3, 3);
+    --color-background-text-hover: rgba(51, 0, 70, 0.671);
+    --color-background-text: rgba(76, 1, 125, 0.923);
+    --size-title: 2rem;
+    --size-subtitle: 1.5rem;
+    --size-paragrahp: 1rem;
+    --color-box-shadow-rutas:#633DA1;
+}

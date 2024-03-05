@@ -1,0 +1,133 @@
+.container_main_rutas{
+    display: flex;
+    grid-area: main;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 80px;
+    color: var(--color);
+}
+
+.title-rutas {
+    font-size: var(--size-title);
+    margin-bottom: 80px;
+}
+
+.container-rutas {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.conteiner_front{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.frontend {
+    max-width: 44%;
+    line-height: 25px;
+    box-shadow: 5px 5px 10px  var(--color);
+    padding: 20px;
+    border-radius: 15px;
+}
+.img_front{
+    width: 40%;
+    box-shadow: -5px 5px 10px  var(--color);
+    border-radius: 15px;
+}
+
+.imagenes_ruta1{
+    width: 100%;
+    box-shadow: -5px 5px 10px  var(--color);
+    border-radius: 15px;
+}
+.container_back{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.backend {
+    max-width: 44%;
+    line-height: 25px;
+    min-height: 150px;
+    align-self: flex-end;
+    box-shadow: -5px 5px 10px var(--color);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.img_back{
+    width: 40%;
+    box-shadow: 5px 5px 10px  var(--color);
+    border-radius: 15px;
+
+
+}
+.imegenes_rutas2{
+    width: 100%;
+    box-shadow: 5px 5px 10px var(--color);
+    border-radius: 15px;
+
+
+}
+
+.container_base{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.base_datos {
+    max-width: 44%;
+    min-height: 150px;
+    box-shadow: 5px 5px 10px  var(--color);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+.img_base{
+    overflow: hidden;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px  var(--color);
+    
+}
+
+.imegenes_rutas3{
+    border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: -5px 5px 10px var(--color);
+
+
+}
+
+@media screen and (max-width: 1050px){
+    .img_front{
+        display: none;
+    }
+    .img_back{
+        display: none;
+    }
+    .img_base{
+        display: none;
+    }
+    .frontend {
+        max-width: 100%;
+        
+    }
+    .backend{
+        max-width: 100%;
+    }
+    .base_datos{
+        max-width: 100%;
+    }
+}

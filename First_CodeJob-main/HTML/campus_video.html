@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{First_CodeJob}</title>
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/campus_video.css">
+    <link rel="stylesheet" href="../CSS/pdfs.css">
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- MENÚ HAMBURGUESA -->
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+    <nav>
+        <a class="burger_menu_item_1" style="animation-delay: 0.1s" href="./ofertas.html">Ofertas</a>
+        <a class="burger_menu_item_2" style="animation-delay: 0.3s" href="./rutas.html">Rutas</a>
+        <a class="burger_menu_item_3" style="animation-delay: 0.4s" href="./acerca.html">Acerca de</a>
+        <a class="burger_menu_item_5" style="animation-delay: 0.6s" href="./login.html">Iniciar Sesión</a>
+    </nav>
+    </div>
+    <!-- CONTENT -->
+    <div id="container">
+        <!------------------------------- MENÚ ------------------------------>
+        <nav class="container_menu">
+            <header class="header_container">
+                <span class="brackets bracket_1">{</span>
+                <a href="../index.html" class="title" title="{First_CodeJob}">First_CodeJob</a>
+                <span class="brackets bracket_2">}</span>
+            </header>
+            <ul class="container_list">
+                <li class="item item_1"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="item item_1"><a href="./campus.html">Campus</a></li>
+                <li class="item item_1"><a href="./PreguntasPrueba.html">Preguntas</a></li>
+                <li class="item item_1"><a href="./campus_video.html">Video</a></li>
+                <li class="item item_1"><a href="../videos/sesionvideos.html">Entrevista</a></li>
+                <li class="item item_2"><a href="./rutas.html">Rutas</a></li>
+                <li class="item item_3"><a href="./acerca.html">Acerca de</a></li>
+                <li class="item item_5"><a href="./login.html">Iniciar Sesión</a></li>
+            </ul>
+            <div class="language_container">
+                <ion-icon name="language-outline" class="language_icon"></ion-icon>
+                <div class="language_container">
+                    <ion-icon name="language-outline" class="language_icon"></ion-icon>
+    <a class="language_english_text" onclick="setLanguageCookie('en')"></a>
+    <a class="language_spanish_text" onclick="setLanguageCookie('es')"></a>
+    <a class="language_french_text" onclick="setLanguageCookie('fr')"></a>
+    <a class="language_german_text" onclick="setLanguageCookie('de')"></a>
+    <a class="language_chinese_text" onclick="setLanguageCookie('zh-CN')"></a>
+    <a class="language_arabic_text" onclick="setLanguageCookie('ar')"></a>
+    <a class="language_hindi_text" onclick="setLanguageCookie('hi')"></a>
+    <a class="language_portuguese_text" onclick="setLanguageCookie('pt')"></a>
+    <a class="language_russian_text" onclick="setLanguageCookie('ru')"></a>
+    <a class="language_japanese_text" onclick="setLanguageCookie('ja')"></a>
+    
+    <!-- Contenedor para el widget de Google Translate -->
+    <div id="google_translate_element"></div>
+            </div>
+        </nav>
+        <!------------------------------ MAIN ------------------------------>
+        <main class="container_main">
+            <header class="header_main">
+                <ul class="nav_main">
+                    <li><a href="./perfil.html">Perfil</a></li>
+                    <li><a href="./campus.html">Campus</a></li>
+                    <li><a href="./PreguntasPrueba.html">Certificaciones</a></li>
+                    <li><a href="../videos/sesionvideos.html">Videos del Coder</a></li>
+                </ul>
+            </header>
+            <!------------------------------ Ofertas y descripcion  ------------------------------>
+            <section class="ofertas_descripcion_container">
+                <!------------------------------   ofertas List Videos ------------------------------>
+                <section class="ofertas_container ofertas_container_normal">
+                    <div class="ofertas_list">
+                        <a href="./campus_video.html"><div class=" ofertas_items caja_ofertas">
+                            <h3 class="">Title of Video Playlist</h3>
+                            <p>10 lessions &nbsp; . &nbsp; 50m 48s</p>
+                            
+                        </div></a>
+                        <div id="playListVideo" class="videos">
+
+                        </div>
+                    </div>    
+                </section>
+                <!------------------------------ Descripcion ------------------------------>
+                <div class="descripcion_container caja_ofertas">
+                    <div class="descripcion_adicionales_container">
+                        <h3 id="title" class="titulo">Title of the playing Video.</h3>
+                        <video id="video" src="../videos/campus/1.mp4" controls width="100%"></video>
+                        
+                    </div>
+                    <div>
+                        <p class="descripcion_oferta">
+
+                        </p>
+                    </div>
+            </section>
+            <section>
+                <div class="pdf-list ">
+                    <a class=" ofertas_items caja_ofertas" href="#" onclick="openModal('/archivosdeLectura/pdfs/archivo1.pdf', this)">Introducción a JavaScript<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo2.pdf', this)">Metodos y Tipos de Datos<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo3.pdf', this)">String<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo4.pdf', this)">Number<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo5.pdf', this)">Estructuras de Control Part
+                        1<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo6.pdf', this)">Estructuras de Control Part
+                        2<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo7.pdf', this)">Objetos<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo8.pdf', this)">Arrays Part 1<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo9.pdf', this)">Arrays Part 2<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo10.pdf', this)">DOM Part 1<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo11.pdf', this)">DOM Part 2<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo12.pdf', this)">DOM Part 3<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo13.pdf', this)">DOM Part 4<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo14.pdf', this)">DOM Part 5<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo16.pdf', this)">DOM ver<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo17.pdf', this)">Programacion Orientada a Objeto -
+                        POO<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo18.pdf', this)">Async Await Parte 1<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo19.pdf', this)">Async Await Parte 2<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo20.pdf', this)">Promesas Y API Fetch<span></span></a>
+                    <a href="#" onclick="openModal('../archivosdeLectura/pdfs/archivo21.pdf', this)">Modulos<span></span></a>
+                </div>
+    
+    
+    
+    
+                <div id="pdfModal" class="modal" onclick="closeModal()">
+                    <div id="modalContent" class="modal-content" onclick="event.stopPropagation()">
+                        <div class="close">
+                            <span onclick="closeModal()">&times;</span>
+                        </div>
+                        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-----------------------------  FOOTER ---------------------------->
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <p>&copy;2023 Firs_CodeJob | All rights reserved</p>
+        </footer>
+    </div>
+    <script src="../js/campus.js"></script>
+    <script src="../js/pdfs.js"></script>
+
+
+    <script src="../js/traductor.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../js/perfil.js"></script>
+</body>
+
+</html>

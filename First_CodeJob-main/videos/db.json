@@ -1,0 +1,315 @@
+{
+  "videosGuardados": [
+    {
+      "id": "1707327320101",
+      "nombre": "video_1707327320101",
+      "videosmp4": "entrevistaCoder_1707327320101.mp4"
+    },
+    {
+      "id": 1707349505885,
+      "nombre": "video_1707349505885",
+      "videosmp4": "entrevistaCoder_1707349505885.mp4"
+    },
+    {
+      "id": 1707349526317,
+      "nombre": "video_1707349526317",
+      "videosmp4": "entrevistaCoder_1707349526317.mp4"
+    }
+  ],
+  "ofertas": [
+    {
+      "id": "fb8c",
+      "nombreOferta": "Desarrollador Junior",
+      "empresa": "Riwi SAS",
+      "ciudad": "medellin",
+      "especialidad": "html",
+      "estudios": "tecnologico",
+      "experiencia": "6",
+      "salario": "2000000",
+      "bono": "500000",
+      "tipoContrato": "fijo",
+      "tiempo": "parcial",
+      "requerimientos": "javascript",
+      "horario": "8am - 4pm",
+      "fechaPublicacion": "2024-01-31",
+      "descripcion": "aqui va la descripcion de la primera oferta\n\n\n\n\n\n\n\n\n.\n\n\n\n\n\n\n\n.\n\n\n\n\n\n\nfin."
+    },
+    {
+      "id": "db22",
+      "nombreOferta": "Desarrollador Senior",
+      "empresa": "Riwi SAS",
+      "ciudad": "bogota",
+      "especialidad": "javascript",
+      "estudios": "profesional",
+      "experiencia": "48",
+      "salario": "3000000",
+      "bono": "1200000",
+      "tipoContrato": "indefinido",
+      "tiempo": "completo",
+      "requerimientos": "node",
+      "horario": "8am - 4pm",
+      "fechaPublicacion": "2024-02-01",
+      "descripcion": "aqui la empresa describe la segunda oferta\n\n\n\n\n\n\n.\n\n\n\n\n\n\n.\n\n\n\n\n\nfin."
+    },
+    {
+      "id": "a976",
+      "nombreOferta": "Asesor Web",
+      "empresa": "Riwi SAS",
+      "ciudad": "cali",
+      "especialidad": "html",
+      "estudios": "tecnico",
+      "experiencia": "48",
+      "salario": "1'200.000",
+      "bono": "500.000",
+      "tipoContrato": "indefinido",
+      "tiempo": "parcial",
+      "requerimientos": "javascript",
+      "horario": "8am - 4pm",
+      "fechaPublicacion": "2024-01-29",
+      "descripcion": "SVAEFBABTBBBBRTR"
+    },
+    {
+      "id": "20f0",
+      "nombreOferta": "prueba de presentacion",
+      "empresa": "dsffdsfds",
+      "ciudad": "cartagena",
+      "especialidad": "backend",
+      "estudios": "tecnologico",
+      "experiencia": "42",
+      "salario": "122121",
+      "bono": "1212",
+      "tipoContrato": "fijo",
+      "tiempo": "parcial",
+      "requerimientos": "node",
+      "horario": "10",
+      "fechaPublicacion": "2024-10-12",
+      "descripcion": "ngn"
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Visual Studio Code y las Mejores Extensiones",
+      "video": "../videos/campus/1.mp4"
+    },
+    {
+      "id": "2",
+      "titulo": "Materiales del curso",
+      "video": "../videos/campus/2.mp4"
+    },
+    {
+      "id": "3",
+      "titulo": "Materiales del curso Finalizados",
+      "video": "../videos/campus/3.mp4"
+    },
+    {
+      "id": "4",
+      "titulo": "Hola Mundo en JavaScript",
+      "video": "../videos/campus/4.mp4"
+    },
+    {
+      "id": "5",
+      "titulo": "Mover JavaScript a su propio archivo",
+      "video": "../videos/campus/5.mp4"
+    },
+    {
+      "id": "6",
+      "titulo": "Lo que se puede hacer con JavaScript en 2 lineas",
+      "video": "../videos/campus/6.mp4"
+    },
+    {
+      "id": "7",
+      "titulo": "Comentar el Código en JavaScript",
+      "video": "../videos/campus/7.mp4"
+    },
+    {
+      "id": "8",
+      "titulo": "La Consola de JavaScript",
+      "video": "../videos/campus/8.mp4"
+    },
+    {
+      "id": "9",
+      "titulo": "Consideraciones en JavaScript con el _",
+      "video": "../videos/campus/9.mp4"
+    },
+    {
+      "id": "10",
+      "titulo": "ESLint para solucionar errores de código",
+      "video": "../videos/campus/10.mp4"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "rol": "desarrollador",
+      "fotoPerfil": "",
+      "nombre": "Victor",
+      "apellido": "Manuel",
+      "correo": "victor@prueba.com",
+      "contraseña": "adm1234",
+      "telefono": "../videos/campus/1.mp4",
+      "ciudad": "../videos/campus/1.mp4",
+      "pais": "../videos/campus/1.mp4",
+      "sobremi": "Desarrollador Full-Stack con mediana experiencia en tecnologías frontend y backend. Me encanta trabajar en proyectos pequeños y medianos que tengan un gran potencial.Como auto-didacta, estoy siempre aprendiendo y mejorando mis habilidades para ofrecer soluciones innovadoras y creativas.Actualmente trabajo como desarrollador freelance, aunque mi disponibilidad es limitada. Estoy siempre buscando nuevas oportunidades para aprender y crecer, y me encantaría poder aportar mis habilidades y experiencia a proyectos desafiantes y emocionantes.",
+      "experiencia": [
+        {
+          "empresa": "Autónomo - Desarrollador Full-Stack",
+          "añosInicio": "2022",
+          "añoFinal": "Actualizad",
+          "funcion": [
+            "Creación y mantenimiento de gestores de datos (dashboard)",
+            "Seguimiento en Jira Software",
+            "Gestión de software en la nube (AWS)"
+          ]
+        }
+      ],
+      "proyecto": [
+        {
+          "imgProyecto": "",
+          "nombreProyecto": "",
+          "añoProyecto": "",
+          "descripcion": ""
+        }
+      ],
+      "habilidades": [
+        {
+          "imghabilidad": "",
+          "nombreHerramienta": ""
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "rol": "desarrollador",
+      "fotoPerfil": "",
+      "nombre": "esteban",
+      "apellido": "gonzalez",
+      "correo": "manuel@prueba.com",
+      "contraseña": "adm1234",
+      "telefono": "../videos/campus/1.mp4",
+      "ciudad": "../videos/campus/1.mp4",
+      "pais": "../videos/campus/1.mp4",
+      "sobremi": "Desarrollador Full-Stack con mediana experiencia en tecnologías frontend y backend. Me encanta trabajar en proyectos pequeños y medianos que tengan un gran potencial.Como auto-didacta, estoy siempre aprendiendo y mejorando mis habilidades para ofrecer soluciones innovadoras y creativas.Actualmente trabajo como desarrollador freelance, aunque mi disponibilidad es limitada. Estoy siempre buscando nuevas oportunidades para aprender y crecer, y me encantaría poder aportar mis habilidades y experiencia a proyectos desafiantes y emocionantes.",
+      "experiencia": [
+        {
+          "empresa": "Autónomo - Desarrollador Full-Stack",
+          "añosInicio": "2022",
+          "añoFinal": "Actualizad",
+          "funcion": [
+            "Creación y mantenimiento de gestores de datos (dashboard)",
+            "Seguimiento en Jira Software",
+            "Gestión de software en la nube (AWS)"
+          ]
+        }
+      ],
+      "proyecto": [
+        {
+          "imgProyecto": "",
+          "nombreProyecto": "",
+          "añoProyecto": "",
+          "descripcion": ""
+        }
+      ],
+      "habilidades": [
+        {
+          "imghabilidad": "",
+          "nombreHerramienta": ""
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "rol": "empresa",
+      "fotoPerfil": "",
+      "nombre": "carlos",
+      "apellido": "villalba",
+      "correo": "carlos@prueba.com",
+      "contraseña": "adm1234",
+      "telefono": "../videos/campus/1.mp4",
+      "ciudad": "../videos/campus/1.mp4",
+      "pais": "../videos/campus/1.mp4",
+      "sobremi": "Desarrollador Full-Stack con mediana experiencia en tecnologías frontend y backend. Me encanta trabajar en proyectos pequeños y medianos que tengan un gran potencial.Como auto-didacta, estoy siempre aprendiendo y mejorando mis habilidades para ofrecer soluciones innovadoras y creativas.Actualmente trabajo como desarrollador freelance, aunque mi disponibilidad es limitada. Estoy siempre buscando nuevas oportunidades para aprender y crecer, y me encantaría poder aportar mis habilidades y experiencia a proyectos desafiantes y emocionantes.",
+      "experiencia": [
+        {
+          "empresa": "Autónomo - Desarrollador Full-Stack",
+          "añoInicio": "2022",
+          "añoFinal": "Actualizad",
+          "funcion": [
+            "Creación y mantenimiento de gestores de datos (dashboard)",
+            "Seguimiento en Jira Software",
+            "Gestión de software en la nube (AWS)"
+          ]
+        },
+        {
+          "empresa": "Autónomo - Desarrollador Full-Stack",
+          "añosInicio": "2022",
+          "añoFinal": "Actualizad",
+          "funcion": [
+            "Creación y mantenimiento de gestores de datos (dashboard)",
+            "Seguimiento en Jira Software",
+            "Gestión de software en la nube (AWS)"
+          ]
+        },
+        {
+          "empresa": "Autónomo - Desarrollador Full-Stack",
+          "añosInicio": "2022",
+          "añoFinal": "Actualizad",
+          "funcion": [
+            "Creación y mantenimiento de gestores de datos (dashboard)",
+            "Seguimiento en Jira Software",
+            "Gestión de software en la nube (AWS)"
+          ]
+        }
+      ],
+      "proyecto": [
+        {
+          "imgProyecto": "",
+          "nombreProyecto": "",
+          "añoProyecto": "",
+          "descripcion": ""
+        }
+      ],
+      "habilidades": [
+        {
+          "imghabilidad": "",
+          "nombreHerramienta": ""
+        }
+      ]
+    },
+    {
+      "id": "34ba",
+      "rol": "desarrollador",
+      "fotoPerfil": "",
+      "nombre": "Victor",
+      "apellido": "Gonzalez",
+      "correo": "victorno9.2@gmail.com",
+      "contraseña": "12345",
+      "telefono": "",
+      "ciudad": "",
+      "pais": "",
+      "sobremi": "",
+      "experiencias": [
+        {
+          "empresa": "",
+          "añoInicio": "",
+          "añoFinal": "",
+          "funcion": []
+        }
+      ],
+      "proyecto": [
+        {
+          "imgProyecto": "",
+          "nombreProyecto": "",
+          "añoProyecto": "",
+          "descripcion": ""
+        }
+      ],
+      "habilidades": [
+        {
+          "imghabilidad": "",
+          "nombreHerramienta": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--color);
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: "Euclid Circular A", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======================================== CONTAINER  ======================================== */
+#container {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+}
+
+.nav_main {
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+    margin: 20px 0px;
+    background-color: var(--color-background);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px var(--color);
+    /* color: var(--color-background); */
+}
+
+/* ------------------------------------------ MAIN ------------------------------------------ */
+.container_main {
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-background);
+    max-width: 1250px;
+    margin: 0px auto 130px;
+}
+
+.container_main button{
+    color: var(--color);
+    font-weight: 600;
+}
+
+/* ------------------------------------------ Perfil ------------------------------------------ */
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 15px 0px;
+}
+
+.container_perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit {
+    font-size: 1.5rem;
+}
+
+.perfil_nombre {
+    font-size: 2rem;
+    font-weight: 600
+}
+
+.perfil_contacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--color);
+}
+
+.contacto {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.logo_contacto {
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--color);
+}
+
+.perfil_social-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.perfil_social-icon__link {
+    font-size: 2rem;
+    color: var(--color);
+    display: inline-block;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.perfil_social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.container_foto_perfil {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: var(--color) solid;
+    box-shadow: 0px 0px 10px 0px var(--color);
+}
+
+.foto_peril {
+    object-fit: contain;
+    width: 100%;
+
+}
+
+
+/* ------------------------------------------ Sobre mi ------------------------------------------ */
+.sobremi_container {
+    margin: 0px 15px;
+    font-weight: 600
+}
+
+.sobremi_text {
+    margin: 15px 0px 15px 5px;
+    color: var(--color);
+    font-weight: 600
+}
+
+.sobremi_text:nth-child(2) {
+    margin-top: 0px;
+}
+
+/* ------------------------------------------ Experiencias ------------------------------------------ */
+.container_experiencias {
+    margin: 0px 15px;
+    font-weight: 600
+}
+
+.subtitulos {
+    display: inline-block;
+    margin: 15px 0 30px;
+    font-size: 1.5rem;
+    font-weight: 600
+}
+
+.experiencias_list_items:first-child {
+    padding-top: 0px;
+    font-weight: 600
+}
+
+.experiencias_list_items {
+    border-bottom: 1px var(--color) solid;
+    padding: 15px 15px 15px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600
+}
+
+.experiencias_año {
+    font-weight: 300;
+    color: var(--color);
+    font-size: 1rem;
+}
+
+.experiencias_empresas {
+    object-fit: contain;
+    width: 100%;
+    font-weight: 600
+}
+
+.experencias_actividades_items {
+    font-weight: 600;
+    color: var(--color);
+    font-size: 1rem;
+}
+
+/* ------------------------------------------ Proyectos ------------------------------------------ */
+
+.container_proyectos {
+    margin: 20px 15px 0px;
+}
+
+.proyectos_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 0px;
+    color: var(--color);
+}
+
+.proyecto_items {
+    width: 370px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: var(--background-cards);
+    color: var(--color);
+    padding: 0.5rem;
+}
+
+.proyecto_items:hover {
+    box-shadow: 0 4px 6px var(--color);
+    color: var(--color-background);
+
+}
+
+.proyecto_empresa {
+    /* font-weight: bold; */
+    font-weight: 600;
+    font-size: var(--size-subtitle);
+}
+
+.proyecto_año {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color);
+}
+
+.proyecto_actividad {
+    font-size: 1rem;
+    color: var(--color);
+    font-weight: 600
+}
+
+.container_proyecyo_img {
+    overflow: hidden;
+    height: 208px;
+    border-radius: 15px;
+}
+
+
+.proyecto_img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.proyecto_herramienta {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyecto_herramienta_items {
+    display: flex;
+    background-color: var(--color);
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 5px;
+    box-shadow: 0px 0px 3px 1px var(--color);
+}
+
+.container_herramienta_img {
+    width: 20px;
+    overflow: hidden;
+}
+
+.herramienta_img {
+    object-fit: contain;
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px var(--color);
+}
+
+.nombre_herramienta {
+    font-weight: 100;
+    font-size: 1rem;
+    color: var(--color-background);
+}
+
+/* ------------------------------------------ Habilidades ------------------------------------------ */
+.habilidades_container {
+    margin: 0px 15px;
+}
+
+.habilidades_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+
+@media screen and (max-width: 805px) {
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_perfil {
+        margin-bottom: 15px;
+    }
+
+    .proyecto_items {
+        width: 350px;
+    }
+
+    .proyectos_list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

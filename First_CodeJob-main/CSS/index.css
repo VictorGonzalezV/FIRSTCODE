@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Euclid Circular A",Poppins;
+}
+/* ======================================== CONTAINER  ======================================== */
+#container{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'footer footer footer footer footer footer'
+}
+/* ------------------------------------------ MAIN ------------------------------------------ */
+.container_main_index{
+    grid-area: main;
+    display: flex;
+    width: 100%;
+    height:auto;
+    background-color: var(--color-background);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* SLOGAN */
+.container_slogan{
+    font-size: 30px;
+    width: 40%;
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.text_slogan{
+    color: var(--color);
+    text-align: center;
+}
+/* SEARCHER */
+.search_container{
+    width: 40%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 100px 0;
+    border-radius: 1.4rem 1.4rem 1.4rem 1.4rem;
+    box-shadow: 0rem 0rem 0.5rem var(--color);
+}
+.input_search {
+    padding: 0.7rem 1.2rem;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 1.4rem 0rem 0rem 1.4rem;
+    background-color: var(--color-inverso);
+}
+.button_search {
+    padding: 0.74rem 1.2rem;
+    box-shadow: 0 0px 0px var(--color);
+    background-color: var(--color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0rem 1.4rem 1.4rem 0rem;
+}
+/* BUTTON HOVER */
+.button_search:hover {
+    background-color: var(--color);
+}
+/* CONTAINER SEARCHER HOVER */
+.search_container:hover{
+    box-shadow: 0rem 0rem 0.8rem var(--color);
+}
+/* IMAGES TEXT */
+.container_text{
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.text_images{
+    padding: 10px;
+    color: var(--color);
+    text-align: center;
+    font-size: 30px;
+}
+/* IMAGE COMPANIES */
+
+.box_container_companies{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    width: 80%;
+    height: auto;
+    margin-bottom: 220px;
+}
+.company_boxes{
+    margin: 10px;
+    background-color: white;
+    height: 180px;
+    width: 200px;
+    box-shadow: 0rem 0rem 1rem var(--color);
+    border-radius: 20px ;
+    overflow: hidden;
+}
+.image_companies{
+    object-fit: cover;
+    width: 100%;
+}
+/* SEARCHER RESPONSIVE */
+@media screen and (max-width: 975px){
+    .button_search {
+        padding: 0.74rem 0.5rem;
+        width: auto;
+    }
+    .search_container{
+        width: 80%;
+    }
+}
+
+
+
+

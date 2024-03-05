@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--color); 
+    list-style: none;
+    font-weight: 600; 
+}
+body{
+    background-color: var(--color-background);
+    font-family: "Euclid Circular A",sans-serif;
+    
+}
+a {
+    text-decoration: none;
+}
+/* ======================================== CONTAINER  ======================================== */
+#container{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+.nav_main{
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+    margin: 20px 0px;
+    background-color: var(--color-background);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px var(--color);
+}
+
+
+/* ------------------------------------------ MAIN ------------------------------------------ */
+.container_main{
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-background);
+    max-width: 1250px;
+    margin: 0px auto 130px;
+}
+/* ------------------------------------------ Campus ------------------------------------------ */
+
+.container_proyectos{
+    margin: 20px 15px 0px;
+}
+.proyectos_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 50px 0px;
+
+}
+
+.proyecto_items {
+    width: 375px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.proyecto_items:hover{
+    box-shadow:0 4px 6px var(--color);
+    background-color: var(--background-cards);
+    
+}
+
+.proyecto_empresa{
+    font-weight: bold;
+    font-size: var(--size-subtitle);
+}
+.proyecto_año{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:var(--color);
+}
+
+.proyecto_actividad{
+    font-size: 1rem;
+    color:var(--background-cards);
+    font-weight: 100;
+}
+.container_proyecyo_img{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.proyecto_img{
+    width: 100%;
+    object-fit: contain;
+    height: 280px;
+}
+
+.subtitulos {
+    display: inline-block;
+    margin: 15px 0 30px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* .proyecto_herramienta{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .proyecto_herramienta_items{
+    display: flex;
+    background-color: rgba(14, 13, 13, 0.39);
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 5px;
+} */
+
+/* .container_herramienta_img{
+    width: 20px;
+    overflow: hidden;
+} */
+
+/* .herramienta_img{
+    object-fit: contain;
+    width: 100%;
+} */
+
+/* .nombre_herramienta{
+    font-weight: 100;
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.719) ;
+} */

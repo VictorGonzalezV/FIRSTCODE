@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: aliceblue; 
+    list-style: none;  
+}
+body{
+    background-color: rgb(25, 25, 25);
+    font-family: "Euclid Circular A",sans-serif;
+    
+}
+a {
+    text-decoration: none;
+}
+/* ======================================== CONTAINER  ======================================== */
+#container{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+.nav_main{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+    background-color: var(--color-background-text);
+    padding: 20px;
+    border-radius: 50px;
+}
+/* ------------------------------------------ MAIN ------------------------------------------ */
+.container_main{
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    background-color: rgb(25, 25, 25);
+    max-width: 1250px;
+    margin: 0px auto 130px;
+}
+/* ------------------------------------------ Perfil ------------------------------------------ */
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 15px 0px;
+}
+.container_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+.title_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit{
+    font-size: 1.5rem;
+}
+.perfil_nombre{
+    font-size: 2rem;
+}
+.perfil_contacto{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.contacto{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+}
+.logo_contacto{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.perfil_social-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.perfil_social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.perfil_social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.container_foto_perfil{
+    width: 238px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: rgba(180, 109, 243, 0.824) solid;
+
+}
+.foto_peril{
+    object-fit: contain;
+    width: 100%;
+
+}
+
+
+/* ------------------------------------------ Sobre mi ------------------------------------------ */
+.sobremi_container{
+    margin: 0px 15px;
+}
+.sobremi_text{
+    margin: 15px 0px 15px 5px;
+    color:rgba(255, 255, 255, 0.719) ;
+}
+.sobremi_text:nth-child(2){
+    margin-top: 0px;
+}
+
+/* ------------------------------------------ Experiencias ------------------------------------------ */
+.container_experiencias{
+    margin: 0px 15px;
+}
+.subtitulos{
+   display: inline-block;
+   margin: 15px 0 30px;
+   font-size: 1.5rem;
+}
+.experiencias_list_items:first-child{
+    padding-top: 0px;
+}
+.experiencias_list_items{
+    border-bottom: 1px rgba(255, 255, 255, 0.527) solid;
+    padding: 15px 15px 15px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+ 
+}
+.experiencias_año{
+    font-weight: 100;
+    color:rgba(255, 255, 255, 0.527);
+    font-size: 1rem;
+}
+
+.experiencias_empresas{
+    object-fit: contain;
+    width: 100%;
+}
+.experencias_actividades_items{
+    font-weight: 100;
+    color:rgba(255, 255, 255, 0.719);
+    font-size: 1rem;
+}
+/* ------------------------------------------ Proyectos ------------------------------------------ */
+
+.container_proyectos{
+    margin: 20px 15px 0px;
+}
+.proyectos_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 50px 0px;
+
+}
+
+.proyecto_items {
+    width: 370px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.proyecto_items:hover{
+    box-shadow:0 4px 6px rgba(180, 109, 243, 0.824);
+    background-color: rgba(116, 111, 111, 0.205);
+    
+}
+
+.proyecto_empresa{
+    font-weight: bold;
+    font-size: var(--size-subtitle);
+}
+.proyecto_año{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:rgba(255, 255, 255, 0.527);
+}
+
+.proyecto_actividad{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.719);
+    font-weight: 100;
+}
+.container_proyecyo_img{
+    overflow: hidden;
+    height: 208px;
+    border-radius: 15px;
+}
+
+
+.proyecto_img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.proyecto_herramienta{
+    display: flex;
+    flex-wrap: wrap;
+}
+.proyecto_herramienta_items{
+    display: flex;
+    background-color: rgba(14, 13, 13, 0.39);
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 5px;
+}
+.container_herramienta_img{
+    width: 20px;
+    overflow: hidden;
+}
+.herramienta_img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.nombre_herramienta{
+    font-weight: 100;
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.719) ;
+}
+
+/* ------------------------------------------ Habilidades ------------------------------------------ */
+.habilidades_container{
+    margin: 0px 15px;
+}
+.habilidades_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+
+@media screen and (max-width: 805px) {
+  
+    .perfil {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container_perfil{
+        margin-bottom: 15px;
+    }
+    .proyecto_items{
+        width: 350px;
+    }
+    .proyectos_list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

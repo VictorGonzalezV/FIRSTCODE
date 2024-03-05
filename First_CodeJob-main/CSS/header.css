@@ -1,0 +1,373 @@
+.container_menu{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 40px;
+    box-shadow: 0px 0px 5px 1px var(--color);
+}
+.header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 101px;
+    position: fixed;
+    margin-bottom: 210px;
+    background-image: url(../img/banner.jpg);
+    background-position: 0px -630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+.title{
+    font-family: "Euclid Circular A", Poppins;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--background-cards);
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 0;
+    animation-name: logo_animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.brackets{
+    color: var(--background-cards);
+    font-weight: 600;
+    font-size: 2.8rem;
+    padding: 6px 0;
+    text-shadow: 0px 2px 8px var(--color);
+}
+/* ANIMACIONES */
+@keyframes logo_animation{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    40%{
+        text-shadow: 0px 30px 10px var(--background-cards);
+        opacity: 0.2;
+    }
+    80%{
+        text-shadow: 0px -30px 10px var(--background-cards);
+        opacity: 0.2;
+    }
+    100%{
+        width: 303px;
+        opacity: 1;
+        text-shadow: 0px 2px 8px var(--color);
+    }
+}
+/* ---------------------- NAVBAR ---------------------- */
+.container_list{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 130px;
+    background-image: url(../img/banner.jpg);
+    background-position: 0px -720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.item{
+    list-style-type: none;
+    padding: 0.6rem 0rem;
+    position: relative;
+    
+}
+.item a{
+    font-size: var(--size-paragrahp);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color);
+    padding: 0.5rem 1.5rem;
+    margin: 0 3rem;
+    position: relative;
+    bottom: 0;
+    background-color: var(--color-background);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+/* NAVBAR HOVER */
+.item:hover > a{
+    bottom: 0.5rem;
+    background-color: var(--color);
+    color: var(--color-inverso);
+    border-radius: 5px;
+}
+.item:hover{
+    border-bottom: 0.1rem solid var(--color);
+}
+/* LANGUAGE OPTION */
+.language_container{
+    display: flex;
+    position: fixed;
+    top: 2.5%;
+    right: 3%;
+    z-index: 150;
+    background-color: var(--color-background);
+    padding: 0.5rem;
+    color: var(--color-text);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 10px 0px 0px;
+}
+.language_english_text{
+    color: var(--color);
+    text-decoration: none;
+}
+
+.language_english_text:hover{
+    color: var(--color-inverso);
+}
+
+/* LANGUAGE OPTION HOVER */
+.language_container:hover{
+    background-color: var(--color);
+    font-weight: 100;
+    color: var(--color-inverso);
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1800px){
+    .header_container{
+        background-image: url(../img/banner.jpg);
+        background-position: 0px -911px;
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+    .container_list{
+        background-image: url(../img/banner.jpg);
+        background-position: 0px -1000px;
+        background-repeat: no-repeat;
+        background-size:auto;
+        position: relative;
+    }
+}
+@media screen and (max-width: 1005px) {
+    /* IMAGE */
+    .header_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        margin-bottom: 210px;
+        background-image: url(../img/banner.jpg);
+        background-position: -600px -200px;
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+    /* TITLE */
+    .title{
+        font-size: var(--size-subtitle);
+        animation-name: logo_animation;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-direction:alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+    /* TITLE ANIMATION */
+    @keyframes logo_animation{
+        0%{
+            width: 0;
+            opacity: 0;
+        }
+        40%{
+            text-shadow: 0px 30px 10px var(--background-cards);
+            opacity: 0.2;
+        }
+        80%{
+            text-shadow: 0px -30px 10px var(--background-cards);
+            opacity: 0.2;
+        }
+        100%{
+            width: 11.5rem;
+            opacity: 1;
+            text-shadow: 0px 2px 5px var(--color);
+        }
+    }
+    /* LANGUAGE OPTION */
+    .language_container{
+        top: 0;
+        right: 0;
+        padding: 0rem;
+    }
+    /* MENU */
+    body {
+        font-family: "Euclid Circular A", Poppins;
+        color: var(--background-cards);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+    }
+    .container_menu{
+        padding-top: 80px;
+        
+    }
+    .header_container{
+        margin-bottom: 80px;
+    }
+    .container_list{
+        display: none;
+    }
+
+    button {
+        border: 0;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .burger, .menu {
+        position: fixed;
+    }
+
+    .burger {
+        z-index: 150;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        width: 3rem;
+        height: 5rem;
+        background-image: url("../img/menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body.open .burger {
+        background-image: url("../img/close.svg");
+    }
+
+    .background {
+        position: fixed;
+        z-index: 2;
+        top: 44px;
+        left: 44px;
+        aspect-ratio: 1 / 1;
+        translate: -50% -50%;
+        height: 88px;
+        background: var(--color-background-inversdo);
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    body.open .background {
+        height: 300vh;
+        opacity: 0.8;
+    }
+
+    .menu {
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.05s;
+    }
+
+    .menu nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 100px;
+    }
+
+    body.open .menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body .menu nav:hover > a {
+        opacity: 0.25;
+    }
+
+    body .menu nav > a:hover {
+        opacity: 1;
+        translate: 8px 0;
+    }
+
+    .menu a {
+        position: relative;
+        color: var(--background-cards);
+        font-size: 32px;
+        font-family: "Euclid Circular A";
+        padding: 20px 0 20px 20px;
+        text-decoration: none;
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .menu a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -26px;
+        translate: 0 -50%;
+        margin-top: 2px;
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid var(--background-cards);
+        border-right: 3px solid var(--background-cards);
+        opacity: 0;
+        rotate: 45deg;
+        transition: 0.3s;
+    }
+
+    .menu a:hover::after {
+        opacity: 1;
+    }
+    /* ANIMACIÓN */
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            translate: -30px 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    body.open .menu a {
+        opacity: 1;
+        animation: appear 0.35s backwards;
+        
+    }
+}
+.burger_menu_item_1{
+    animation-delay: 0.1s;
+}
+.burger_menu_item_2{
+    animation-delay: 0.3s;
+}
+.burger_menu_item_3{
+    animation-delay: 0.4s;
+}
+.burger_menu_item_4{
+    animation-delay: 0.5s;
+}
+.burger_menu_item_5{
+    animation-delay: 0.6s;
+}
